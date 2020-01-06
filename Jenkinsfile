@@ -2,7 +2,7 @@ node('master') {
     stage("Fetch Source Code") {
         git 'https://github.com/TrainingByPackt/Beginning-Jenkins.git'
     }
-    
+
     dir('Lesson5') {
         printMessage('Running Pipeline')
         stage("Testing") {
@@ -14,7 +14,6 @@ node('master') {
             } else {
                 printMessage("No deployment for branch [${env.BRANCH_NAME}]")
             }
-            
         }
         printMessage('Pipeline Complete')
     }
