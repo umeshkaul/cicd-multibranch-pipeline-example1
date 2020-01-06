@@ -3,7 +3,7 @@ node('master') {
         git 'https://github.com/umeshkaul/cicd-multibranch-pipeline-example1'
     }
 
-    dir('Lesson5') {
+    dir(".") {
         printMessage('Running Pipeline')
         stage("Testing") {
             sh 'python test_functions.py'
