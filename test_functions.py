@@ -13,6 +13,9 @@ class TestFunctions(unittest.TestCase):
     def test_add_values(self):
         self.assertEqual(30, add_two_values(self.value1, self.value2))
 
+    def test_multiply_two_values(self):
+        self.assertEqual(2000,multipy_two_values(self.value1,self.value2))
+
     def test_add_values_two(self):
         self.assertEqual(15, add_multiple_values(1,2,3,4,5))
 

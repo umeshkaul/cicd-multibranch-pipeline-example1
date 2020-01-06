@@ -7,6 +7,15 @@ def add_two_values(value1, value2):
     """
     return value1 + value2
 
+def multipy_two_values(value1, value2):
+    """ Multiplies two integers
+
+    Arguments:
+    value1: first integer value e.g. 10
+    value2: second integer value e.g. 2
+    """
+    return value1 * value2
+
 def add_multiple_values(*args):
     """ Adds a list of integers
 
